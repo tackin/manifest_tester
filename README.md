@@ -21,10 +21,10 @@ für Branch 'beta': beta.manifest
 ## Das Tool kann einen Pfad auf das zu prüfende Manifest erhalten.  
 Nicht immer ist das zu prüfende Manifest schon im standard Updateverzeichnis des Branchs, sondern liegt noch abseits.  
 Auch dieses abseits liegende Manifest kann geprüft werden.  
-z.B.: 1.updates.services.fftr/firmware/tackin_test_for_next_stable_release/sysupgrade
-
-**Aufruf:** .\/manifest-tester.lua -m 1.updates.services.fftr/firmware/tackin_test_for_next_stable_release/sysupgrade  
-prüft z.B. die Datei http://1.updates.services.fftr/firmware/tackin_test_for_next_stable_release/sysupgrade/stable.manifest  
+z.B.:FFTR-Mirror1: 1.updates.services.fftr/firmware/test_for_next_stable_release/sysupgrade
+oder  
+**Aufruf:** .\/manifest-tester.lua -m abcde.fftr.de -b beta
+prüft die Datei http://abcde.fftr.de/beta.manifest  
 auf: 
 - Vorgaben des "stable" Branches (hinterlegte Public-Keys und hinterlegte Mindestzahl an gültigen Unterschriften)
 - im neuen Manifest tatsächlich gefundene Unterschriften
